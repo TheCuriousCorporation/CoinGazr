@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Bitcoin</title>
+  <link rel="stylesheet" src="/stylesheets/style.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/parser.js"></script>
+  <script type="text/javascript" src="/javascripts/bpi.js"></script>
+  <script type="text/javascript" src="/javascripts/btcaverages.js"></script>
+  <script type="text/javascript" src="/javascripts/bitcoinprices.js"></script>
+  <script type="text/javascript" src="/javascripts/latestBlock.js"></script>
+  <script type="text/javascript" src="/javascripts/inewsticker.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('#fade').inewsticker({
+      speed        : 3000,
+      effect       : 'fade',
+      dir          : 'ltr',
+      font_size    : '',
+      color        : 'black',
+      font_family  : 'arial',
+      delay_after  : 1000,
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header" style="overflow: hidden; position: relative; height 86px;">
+<!--  <div id="w">
+    <div id="content"> 
+      <h1>CoinGazr</h1> -->
+
+    <!--  <h2>coingazr</h2>
+      <h4>All the latest digital currency and financial news</h4> -->
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li><img src="/images/finalCrop.png"></li>
+        <!--<li><h2>CoinGazr</h2></li>-->
+      </ul>
+        <ul class="nav navbar-nav navbar-right" id="fade">
+          <li class="usd">...</li>
+          <li class="eur">...</li>
+          <li class="cad">...</li>
+          <li class="hkd">...</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="hello">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1- col-lg-offset-1 centered">
+        <br />
+        <br />
+        <br />
+        <center><h2>MarketPlace</h2></center>
+
+      <!--<table class="table">
+      	<thead>
+      		<tr>
+    			<th class="cad">...</th>
+    			<th class="hkd">...</th>
+    			<th class="eur">...</th>
+    		</tr>
+	  </table> -->
+<!--    <table class="table">
+      <thead>
+        <tr>
+          <th class="hashChain"></th>
+          <th class="hashSum"></th>
+          <th class="hashSize"></th>
+        </tr>
+      </thead>
+    </table> -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th><iframe frameBorder="0" scrolling="no" src="https://www.bigterminal.com/embed/chart-widget/?&color=0cd1aa&series=averageBTCUSD&sub_id=uuEeYHp" width="955" height="310"></iframe></th>
+          </tr>
+      </thead>
+    </table>
+	  <table class="table table-striped">
+	  	<thead>
+	  	<tr>
+	  		<th class="btcUSA"></th>
+	  		<th class="bitfinex"></th>
+	  		<th class="cointrader"></th>
+	  		<th class="bitstamp"></th>
+	  		<th class="cryptotrade"></th>
+	  	</tr>
+	  	</thead>
+	  	<tbody>
+	  		<tr>
+	  			<th class="bidUSD">Bid: </th>
+	  			<th class="finBid">Bid: </th>
+	  			<th class="ctBid" >Bid: </th>
+	  			<th class="itBid" >Bid: </th>
+	  			<th class="ctBid" >Bid: </th>
+	  		</tr>
+	  		<tr>
+        		<th class="AskUSD">Ask: </th>
+        		<th class="finAsk">Ask: </th>
+        		<th class="ctAsk" >Ask: </th>
+        		<th class="itAsk" >Ask: </th>
+        		<th class="ctAsk" >Ask: </th>
+        	</tr>
+        	<tr>
+        		<th class="priceUSD">Price: </th>
+        		<th class="priceFin">Price: </th>
+        		<th class="ctFin"   >Price: </th>
+        		<th class="itFin"   >Price: </th>
+        		<th class="ctFin"   >Price: </th>
+        	</tr>
+        	<tr>
+        		<th class="priceVolumeUSD">Volume: </th>
+        		<th class="priceVolumeFIN">Volume: </th> 
+        		<th class="ctVolumeFIN"   >Volume: </th>
+        		<th class="itVolumeFIN"   >Volume: </th>
+        		<th class="ctVolumeFIN"   >Volume: </th>
+        	</tr>
+        	</tbody>
+    </table>
+
+      <div id="coindesk" class="feedcontainer"></div>
+      <hr>
+      <div id="bitcoinMagazine" class="feedcontainer"></div>
+      <hr>
+      <h2>CryptoCrimson</h2>
+      <div id="cryptocrimson" class="feedcontainer"></div>
+      <hr>
+      <div id="buttcoin" class="feedcontainer"></div>
+      <hr>
+      <div id="coinbase" class="feedcontainer"></div>
+      <hr>
+      <div id="ethereum" class="feedcontainer"></div>
+      <hr>
+      <div id="redditBitcoin" class="feedcontainer"></div>
+      <hr>
+      <div id="dogecoin" class="feedcontainer"></div>
+      <hr>
+      <div id="redditLitecoin" class="feedcontainer"></div>
+      <hr>
+      <div id="cryptogeeks" class="feedcontainer"></div>
+      <hr>
+      <div id="coinnews" class="feedcontainer"></div>
+      <hr>
+      <div id="coinomist" class="feedcontainer"></div>
+      <hr>
+      <div id="cryptonewzBiz" class="feedcontainer"></div>
+      <hr>
+      <div id="new24" class="feedcontainer"></div>
+      <hr>
+      <div id="simplifyPayments" class="feedcontainer"></div>
+      <hr>
+      <div id="scammer" class="feedcontainer"></div>
+      <hr>
+      <h2>Bitcoin Warrior</h2>
+      <div id="bitcoinwarrior" class="feedcontainer"></div>
+      <hr>
+    </div><!-- @end #content -->
+    <div id="more-content">
+    	<h3>Forum Info</h3>
+    	<div id="discussion" class="feedcontainer"></div>
+    	<hr>
+  </div><!-- @end #w -->
+<script type="text/javascript">
+$(function(){
+  // running custom RSS functions
+  parseRSS('http://feeds.feedburner.com/CoinDesk', '#coindesk');
+  parseRSS('http://feeds.feedburner.com/bitcoinmagazine', '#bitcoinMagazine');
+  parseRSS('http://cryptocrimson.com/feed/', '#cryptocrimson');
+  parseRSS('http://www.reddit.com/r/Bitcoin/.rss', '#redditBitcoin');
+  parseRSS('http://feeds.feedburner.com/buttcoin', '#buttcoin');
+  parseRSS('http://feeds.feedburner.com/coinbase', '#coinbase');
+  parseRSS('http://bitcoinscammers.com/feed/', '#scammer');
+  parseRSS('http://blog.ethereum.org/feed/', '#ethereum');
+  parseRSS('http://feeds.feedburner.com/dogecoin', '#dogecoin');
+  parseRSS('http://www.reddit.com/r/litecoin/.rss', '#redditLitecoin');
+  parseRSS('http://cryptogeeks.com/news/feed', '#cryptogeeks');
+  parseRSS('http://cointext.com/feed/#', '#coinnews');
+  parseRSS('http://robert.flassig.com/?feed=rss2', '#coinomist');
+  parseRSS('http://www.cryptonews.biz/feed/', '#cryptonewzBiz');
+  parseRSS('http://bitcoinnews24.com/feed/', '#new24');
+  parseRSS('http://simplifypayments.co.uk/feed/', '#simplifyPayments');
+  parseRSS('http://bitcoinwarrior.net/feed/', "#bitcoinwarrior");
+  parseRSS('https://www.bitcoinforum.com/bitcoin-discussion/?action=.xml;type=rss', '#discussion');
+});
+</script>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
