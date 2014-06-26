@@ -1,4 +1,4 @@
-/* Crypto-Trade and Cointrader "Bid" and "Ask" 
+/* Crypto-Trade and campbx "Bid" and "Ask" 
 /* prices are showing two results. Fix 'em or
 /* put new exchanges in their place 6/15/14 */
 $(document).ready(function(){
@@ -15,20 +15,20 @@ $(document).ready(function(){
     $('.finAsk').append("$" + data.USD.exchanges.bitfinex.rates.ask);
     $('.priceFin').append("$" + data.USD.exchanges.bitfinex.rates.last);
     $('.priceVolumeFIN').append(data.USD.exchanges.bitfinex.volume_percent + "%");
-    $('.cointrader').append("<h3>" + data.USD.exchanges.cointrader.display_name + "</h3>");
-    $('.ctBid').append("$" + data.USD.exchanges.cointrader.rates.bid);
-    $('.ctAsk').append("$" + data.USD.exchanges.cointrader.rates.ask);
-    $('.ctFin').append("$" + data.USD.exchanges.cointrader.rates.last);
-    $('.ctVolumeFIN').append(data.USD.exchanges.cointrader.volume_percent + "%");
     $('.bitstamp').append("<h3>" + data.USD.exchanges.bitstamp.display_name + "</h3>");
     $('.itBid').append("$" + data.USD.exchanges.bitstamp.rates.bid);
     $('.itAsk').append("$" + data.USD.exchanges.bitstamp.rates.ask);
     $('.itFin').append("$" + data.USD.exchanges.bitstamp.rates.last);
     $('.itVolumeFIN').append(data.USD.exchanges.bitstamp.volume_percent + "%");
-    $('.cryptotrade').append("<h3>" + data.USD.exchanges.cryptotrade.display_name + "</h3>");
-    $('.ctBid').append("$" + data.USD.exchanges.cryptotrade.rates.bid);
-    $('.ctAsk').append("$" + data.USD.exchanges.cryptotrade.rates.ask);
-    $('.ctFin').append("$" + data.USD.exchanges.cryptotrade.rates.last);
-    $('.ctVolumeFIN').append(data.USD.exchanges.cryptotrade.volume_percent + "%");
+    $('.localbitcoins').append("<h3>"+ data.AUD.exchanges.localbitcoins.display_name + "</h3>");
+    $('.localBid').append("$" + data.AUD.exchanges.localbitcoins.rates.bid);
+    $('.localAsk').append("$" + data.AUD.exchanges.localbitcoins.rates.ask);
+    $('.localPrice').append("$" + data.AUD.exchanges.localbitcoins.rates.last);
+    $('.localVol').append(data.AUD.exchanges.localbitcoins.volume_percent + "%");
+    $('.kraken').append("<h3>" + data.USD.exchanges.kraken.display_name + "</h3>")
+    $('.kraBid').append("$" + data.USD.exchanges.kraken.rates.bid);
+    $('.kraAsk').append("$" + data.USD.exchanges.kraken.rates.ask);
+    $('.kraPrice').append("$" + data.USD.exchanges.kraken.rates.last);
+    $('.kraVol').append(data.USD.exchanges.kraken.volume_percent + "%");
   });
 });
