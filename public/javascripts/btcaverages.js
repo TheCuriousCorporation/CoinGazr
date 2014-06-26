@@ -1,3 +1,6 @@
+/* Crypto-Trade and Cointrader "Bid" and "Ask" 
+/* prices are showing two results. Fix 'em or
+/* put new exchanges in their place 6/15/14 */
 $(document).ready(function(){
   $.ajax({
     url: "https://api.bitcoinaverage.com/all"
