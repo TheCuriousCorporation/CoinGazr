@@ -1,6 +1,4 @@
-/* Crypto-Trade and campbx "Bid" and "Ask" 
-/* prices are showing two results. Fix 'em or
-/* put new exchanges in their place 6/15/14 */
+
 $(document).ready(function(){
   $.ajax({
     url: "https://api.bitcoinaverage.com/all"
@@ -20,11 +18,11 @@ $(document).ready(function(){
     $('.itAsk').append("$" + data.USD.exchanges.bitstamp.rates.ask);
     $('.itFin').append("$" + data.USD.exchanges.bitstamp.rates.last);
     $('.itVolumeFIN').append(data.USD.exchanges.bitstamp.volume_percent + "%");
-    $('.localbitcoins').append("<h3>"+ data.AUD.exchanges.localbitcoins.display_name + "</h3>");
-    $('.localBid').append("$" + data.AUD.exchanges.localbitcoins.rates.bid);
-    $('.localAsk').append("$" + data.AUD.exchanges.localbitcoins.rates.ask);
-    $('.localPrice').append("$" + data.AUD.exchanges.localbitcoins.rates.last);
-    $('.localVol').append(data.AUD.exchanges.localbitcoins.volume_percent + "%");
+    $('.localbitcoins').append("<h3>"+ data.USD.exchanges.localbitcoins.display_name + "</h3>");
+    $('.localBid').append("$" + data.USD.exchanges.localbitcoins.rates.bid);
+    $('.localAsk').append("$" + data.USD.exchanges.localbitcoins.rates.ask);
+    $('.localPrice').append("$" + data.USD.exchanges.localbitcoins.rates.last);
+    $('.localVol').append(data.USD.exchanges.localbitcoins.volume_percent + "%");
     $('.kraken').append("<h3>" + data.USD.exchanges.kraken.display_name + "</h3>")
     $('.kraBid').append("$" + data.USD.exchanges.kraken.rates.bid);
     $('.kraAsk').append("$" + data.USD.exchanges.kraken.rates.ask);
